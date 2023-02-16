@@ -89,6 +89,7 @@ const reversed = favMovies.reverse();
 favMovies.shift();
 favMovies.unshift("UP");
 favMovies.splice(3, 0, "Avatar");
+
 const newFavMovies = favMovies.slice(0-10)
 console.log(newFavMovies);
  
@@ -112,8 +113,16 @@ console.log(favMovies[19]);
 ////////////////////////////////
 //* Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
-// console.log(whereIsWaldo[2][1][1]);
+                    
+whereIsWaldo.splice(1,1)
+whereIsWaldo[1][2] = "No One"
+               
+console.log(whereIsWaldo[2][1][1]);
+console.log(whereIsWaldo)
 ////////////////////////////////
 //*  Excited Kitten
 ////////////////////////////////
