@@ -156,16 +156,15 @@ console.log(ourClass)
 // E. Mix It Up
 
 const myArray = [5, 10, 500, 20]
-// // myArray.push = [ "Aegon", "Pokemon"]
+// myArray.push = [ "Aegon", "Pokemon"]
 const remove5 = myArray.shift([0])
-// // myArray.unshift = "Bob Marley"
+// myArray.unshift = "Bob Marley"
 console.log(myArray.push("Aegon", "Pokemon"))
 console.log(myArray.unshift('Bob Marley'))
 console.log(myArray.pop('Pokemon'))
 console.log(Array.prototype.reverse())
 console.log(myArray);
 
-// Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
 
 // F. Biggie Smalls
 
@@ -226,9 +225,10 @@ kristynsCloset.splice(5, 0 , 'raybans')
 kristynsCloset.splice(6, 1, 'stained knit hat')
 console.log(kristynsCloset)
 
+thomsCloset.splice([2],[2],'Footie Pajamas')
+console.log(thomsCloset)
 console.log(`Thom is looking fierce in a ${thomsCloset[0][2]}  ${thomsCloset[1][1]} and ${thomsCloset[2][0]}!`)
 
-//  NEED HELP === > Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 
 //_____________________________________________________________
 
@@ -257,21 +257,22 @@ console.log(calculateCube(5));
 
 // D. Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
 
-// function isVowel(argument){
+function isVowel(argument){
 
-// 	let text;
-// 	const arguments = argument.toLowerCase();
+	const arguments = argument.toLowerCase();
 
-//     const vowels = (['a', 'e', 'i', 'o', 'u']);
+    const vowels = (['a', 'e', 'i', 'o', 'u']);
 
-//     for (let i = 0; i <= vowels.length; i++){
-//         if (argument != vowels[i]) {
-//             continue;
-//         }
-//         return true;
-//     }
-//     return false;
-// }
+    for (let i = 0; i <  vowels.length; i++){
+        if (argument !== vowels[i]) {
+            continue;
+        }
+        return true;
+    }
+    return false;
+}
+
+console.log(isVowel)
 
 // E. Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
 
